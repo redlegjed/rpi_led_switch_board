@@ -33,6 +33,17 @@ The circuit is very basic, it just connects all the components to the header pin
 * The individual LEDs have their anode (positive, long pin) side connected to the header (GPIO) and their cathode (short pin) to a 220 ohm resistor which goes to Ground.
 * The RGB LED is set up as a common anode configuration. This means the positive side of the three LEDs inside it are all connected together and the negative sides come out on three pins. The positive side is connected to 3.3V and the negative sides go through 220 ohm resistors and then to the header (GPIO pins). In common anode configuration the GPIO pins must be set to LOW to turn on the LEDs and HIGH to turn them off. If using the *gpiozero* library *RGBLED* class to control them there is an extra argument needed to setup this. See below and *led_switch_board_demo.py* for examples.
 
+# Components
+
+All the components are available at [Adafruit](https://www.adafruit.com/) but can be found elsewhere as well.
+
+* [Push buttons](https://www.adafruit.com/product/1009)
+* [Slide switches](https://www.adafruit.com/product/805)
+* [RGB LED 10mm diffused](https://www.adafruit.com/product/848)
+* LEDs : any will do
+* [220 ohm resistors](https://www.adafruit.com/product/2780)
+* [Header](https://www.adafruit.com/product/2222) will need cutting
+
 # Controlling using Python on a Raspberry Pi
 
 The circuit board fits onto one end of the GPIO pin header, the end nearest the USB ports (see picture at the top of this page).
