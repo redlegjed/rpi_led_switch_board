@@ -40,9 +40,7 @@ The circuit board fits onto one end of the GPIO pin header, the end nearest the 
 The easiest way to control the board is using the [*gpiozero* library](https://gpiozero.readthedocs.io/en/stable/). Set up all the components like this:
 
 ```python
-
 from gpiozero import LED,RGBLED,Button
-from signal import pause
 
 # Setup the hardware
 # =======================
@@ -94,6 +92,8 @@ if switch_right.is_pressed:
         print("Right Switch is on")
 
 ```
+
+A full example is given in *led_switch_board_demo.py*.
 
 
 

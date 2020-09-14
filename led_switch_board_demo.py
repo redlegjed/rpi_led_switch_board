@@ -1,8 +1,16 @@
 """
 LED/Switch board demo
 
+* Set up all the hardware.
+* Connect 3 of the push buttons to the individual LEDs. So that the LEDs turn
+    on when the buttons are pressed
+* Connect 4th button to a function that runs the RGB LED through different colours
+* Printout when the slide switches are turned on and off.
+
+See: https://gpiozero.readthedocs.io/en/stable/ for more details
+
 """
-import random
+
 from time import sleep
 from gpiozero import LED,RGBLED,Button
 from signal import pause
@@ -16,6 +24,7 @@ led_green = LED(25)
 led_blue = LED(24)
 
 # Red, Green, Blue (RGB) LED
+# Note: need to set the active_high argument to False
 led_rgb = RGBLED(red=10,green=9,blue=11,active_high=False)
 
 # Push buttons
