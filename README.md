@@ -15,7 +15,7 @@ All of these are separately routed to the Raspberry Pi's GPIO pins through a hea
 
 Although the board was designed with the Raspberry Pi in mind, there's no reason why it couldn't be used with other similar boards by connecting wires to the relevant header pins.
 
-The board was made as a simple example for learning to use the [Kicad](https://kicad-pcb.org/) circuit board design tools. The design was put together by following [this excellent example from Chris Gammell at Contextual electronics](https://www.youtube.com/watch?v=PlDOnSHkX2c)
+The board was made as a simple example for learning to use the [Kicad](https://kicad-pcb.org/) circuit board design tools. The design was put together by following [this excellent example from Chris Gammell at Contextual electronics](https://www.youtube.com/watch?v=PlDOnSHkX2c). The Kicad design files are located in the *Rpi_led_switch_board* folder. This folder is a Kicad project so it should be able to be opened directly in Kicad.
 
 The board was fabricated at [Osh Park](https://oshpark.com) and can be viewed [here](https://oshpark.com/shared_projects/ITYO5L7G). 
 
